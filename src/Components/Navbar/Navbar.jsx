@@ -1,10 +1,18 @@
 import React, { useState } from "react";
 import "./Navbar.scss";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Navbar = (path) => {
   path = path.path;
   const [showServicesDropdown, setShowServicesDropdown] = useState(false);
+  const navigate = useNavigate();
+
+  const handleServiceClick = (service) => {
+    if (service === "General Training") {
+      navigate("/fitness");
+    }
+    setShowServicesDropdown(false);
+  };
 
   return (
     <>
@@ -73,18 +81,18 @@ const Navbar = (path) => {
                 }
               >
                 services
-                <span style={{ marginLeft: "5px" }}>▼</span>
+                {/* <span style={{ marginLeft: "5px" }}>▼</span> */}
               </div>
               {showServicesDropdown && (
                 <div className="services-dropdown">
-                  <div className="dropdown-item">General Training</div>
-                  <div className="dropdown-item">Personal Training</div>
-                  <div className="dropdown-item">Group Classes</div>
-                  <div className="dropdown-item">HIIT Training</div>
-                  <div className="dropdown-item">Yoga</div>
-                  <div className="dropdown-item">Boxing</div>
-                  <div className="dropdown-item">Strength & Conditioning</div>
-                  <div className="dropdown-item">Body Transformation</div>
+                  <div className="dropdown-item" onClick={() => handleServiceClick("General Training")}>General Training</div>
+                  <div className="dropdown-item" onClick={() => handleServiceClick("Personal Training")}>Personal Training</div>
+                  <div className="dropdown-item" onClick={() => handleServiceClick("Group Classes")}>Group Classes</div>
+                  <div className="dropdown-item" onClick={() => handleServiceClick("HIIT Training")}>HIIT Training</div>
+                  <div className="dropdown-item" onClick={() => handleServiceClick("Yoga")}>Yoga</div>
+                  <div className="dropdown-item" onClick={() => handleServiceClick("Boxing")}>Boxing</div>
+                  <div className="dropdown-item" onClick={() => handleServiceClick("Strength & Conditioning")}>Strength & Conditioning</div>
+                  <div className="dropdown-item" onClick={() => handleServiceClick("Body Transformation")}>Body Transformation</div>
                 </div>
               )}
             </li>
