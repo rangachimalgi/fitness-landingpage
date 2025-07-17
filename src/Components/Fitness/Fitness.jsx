@@ -4,7 +4,6 @@ import Navbar from "../Navbar/Navbar";
 
 import "./Fitness.css";
 import SimpleSlider from "./FitnessSlider";
-import SimpleSlider2 from "./FitnessSlider2";
 import { Footer } from "../index";
 
 const Fitness = () => {

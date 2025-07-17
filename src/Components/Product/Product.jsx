@@ -19,7 +19,6 @@ const Product = () => {
     fabric: [""],
     material: ["", "", "", " ", ""],
   });
-  const cartDetails = useSelector((cart) => cart.addToCartReducer);
   const dis = useDispatch();
   const { id } = useParams();
   const loginStatus = useSelector((status) => status.loginReducer.loginStatus);
@@ -29,7 +28,7 @@ const Product = () => {
   // console.log(productsData.imageUrl[0]);
 
   const handleAddToCart = () => {
-    loginStatus == false
+    loginStatus === false
       ? alert("PLEASE LOG IN FIRST")
       : dis(addToCart(productsData));
   };
@@ -41,7 +40,7 @@ const Product = () => {
       .catch((err) => console.log("SERVER ERROR"));
 
     return () => {};
-  }, []);
+  }, [id]);
 
   useEffect(() => {
     let setIntervalId = setInterval(() => {

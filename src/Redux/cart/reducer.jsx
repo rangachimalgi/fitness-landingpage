@@ -1,5 +1,4 @@
 import { ADD_TO_CART } from "./action";
-import { REMOVE_CART } from "./action";
 
 // {
 //   id: 0,

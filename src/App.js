@@ -1,18 +1,13 @@
 import "./App.scss";
 import {
-  Navbar,
   Home,
   Fitness,
-  Footer,
   Product,
   Error,
 } from "./Components";
 import Admin from "./Components/Admin/CreateProduct";
 
 import { Routes, Route } from "react-router-dom";
-import { useEffect, useState } from "react";
-import { useSelector, useDispatch } from "react-redux";
-import { login } from "./Redux/loginDetails/action";
 
 // import Error from "./Components/Error/Error";
 // import Cart from "./Components/Cart/Cart";
