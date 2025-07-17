@@ -61,7 +61,32 @@ const Navbar = (path) => {
           <ul>
             <li
               style={
-                path === "fitness"
+                path === "home"
+                  ? {
+                      borderBottomColor: "white",
+                      borderBottomWidth: "2px",
+                      borderBottomStyle: "solid",
+                    }
+                  : { borderWidth: "none" }
+              }
+            >
+              <Link
+                to="/"
+                className="navbar__links-link"
+                style={
+                  path === "home"
+                    ? {
+                        color: "white",
+                      }
+                    : { color: "rgb(240, 240, 240, 0.6)" }
+                }
+              >
+                home
+              </Link>{" "}
+            </li>
+            <li
+              style={
+                path === "services"
                   ? {
                       borderBottomColor: "white",
                       borderBottomWidth: "2px",
@@ -74,17 +99,17 @@ const Navbar = (path) => {
                 to="/fitness"
                 className="navbar__links-link"
                 style={
-                  path === "fitness"
+                  path === "services"
                     ? {
                         color: "white",
                       }
                     : { color: "rgb(240, 240, 240, 0.6)" }
                 }
               >
-                fitness
+                services
               </Link>{" "}
             </li>
-            <li
+            {/* <li
               style={
                 path === "care"
                   ? {
@@ -161,7 +186,7 @@ const Navbar = (path) => {
               >
                 store
               </Link>{" "}
-            </li>
+            </li> */}
           </ul>
         </div>
         <div className="navbar__cart">
