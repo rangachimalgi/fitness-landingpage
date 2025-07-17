@@ -1,13 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Navbar.scss";
 import { Link } from "react-router-dom";
 
 const Navbar = (path) => {
   path = path.path;
-
-
-
-  
+  const [showServicesDropdown, setShowServicesDropdown] = useState(false);
 
   return (
     <>
@@ -61,20 +58,35 @@ const Navbar = (path) => {
                     }
                   : { borderWidth: "none" }
               }
+              onMouseEnter={() => setShowServicesDropdown(true)}
+              onMouseLeave={() => setShowServicesDropdown(false)}
             >
-              <Link
-                to="/fitness"
+              <div
                 className="navbar__links-link"
                 style={
                   path === "services"
                     ? {
                         color: "white",
+                        cursor: "pointer",
                       }
-                    : { color: "rgb(240, 240, 240, 0.6)" }
+                    : { color: "rgb(240, 240, 240, 0.6)", cursor: "pointer" }
                 }
               >
                 services
-              </Link>{" "}
+                <span style={{ marginLeft: "5px" }}>▼</span>
+              </div>
+              {showServicesDropdown && (
+                <div className="services-dropdown">
+                  <div className="dropdown-item">General Training</div>
+                  <div className="dropdown-item">Personal Training</div>
+                  <div className="dropdown-item">Group Classes</div>
+                  <div className="dropdown-item">HIIT Training</div>
+                  <div className="dropdown-item">Yoga</div>
+                  <div className="dropdown-item">Boxing</div>
+                  <div className="dropdown-item">Strength & Conditioning</div>
+                  <div className="dropdown-item">Body Transformation</div>
+                </div>
+              )}
             </li>
             {/* <li
               style={

@@ -22,15 +22,9 @@ const Footer = () => {
           <div>slam pass network</div>
         </div>
 
-        <div className="footer__textBoxContainer__textBoxTwo">
-          <div>partner.fit</div>
-          <div>blogs</div>
-          <div>security</div>
-          <div>careers</div>
-        </div>
 
         <div className="footer__textBoxContainer__textBoxThree">
-          <div>contanct us</div>
+          <div>contact us</div>
           <div>privacy policy</div>
           <div>refund policy</div>
           <div>terms & conditions</div>
@@ -38,7 +32,7 @@ const Footer = () => {
       </div>
 
       <div className="footer__storeBox">
-        <div className="footer__storeBox-links">
+        {/* <div className="footer__storeBox-links">
           <img
             src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,q_auto:eco,dpr_2,f_auto,fl_progressive//image/footer-web/FooterV3/app-store.png"
             alt="apple-store"
@@ -47,7 +41,7 @@ const Footer = () => {
             src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,q_auto:eco,dpr_2,f_auto,fl_progressive//image/footer-web/FooterV3/google-play.png"
             alt="google-store"
           />
-        </div>
+        </div> */}
 
         <div className="footer__storeBox-social-links">
           <img
