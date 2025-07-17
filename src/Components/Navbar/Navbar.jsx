@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Navbar.scss";
 import { Link, useNavigate } from "react-router-dom";
+import Logo from "../Logo/Logo";
 
 const Navbar = (path) => {
   path = path.path;
@@ -26,7 +27,7 @@ const Navbar = (path) => {
       >
         <div className="navbar__logo">
           <Link to="/" className="navbar__links-link">
-            <span style={{ fontSize: "24px", fontWeight: "bold", color: "white" }}>slam</span>
+            <Logo size="medium" />
           </Link>
         </div>
         <div className="navbar__links">
@@ -177,6 +178,24 @@ const Navbar = (path) => {
           </ul>
         </div>
         <div className="navbar__cart">
+          <div className="navbar__cart-button" style={{ marginRight: "15px" }}>
+            <button style={{
+              background: "transparent",
+              color: "white",
+              border: "2px solid rgba(255, 255, 255, 0.75)",
+              transition: "all 250ms ease",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              fontSize: "12px",
+              borderRadius: "5px",
+              padding: "7px 15px",
+              fontWeight: "700",
+              cursor: "pointer"
+            }}>
+              OWN A FRANCHISE
+            </button>
+          </div>
           <div className="navbar__cart-button">
             <button>GET APP</button>
           </div>

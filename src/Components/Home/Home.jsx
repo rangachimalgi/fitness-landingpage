@@ -47,11 +47,24 @@ const Home = () => {
         </div>
         <div className="homePage__text-poster-one">
           <div className="homePage__text-poster-one_img-one">
-            <img
-              src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_500,ar_2.13,q_auto:eco,dpr_2,f_auto,fl_progressive/image/test/we-are-cult-logo/text-only-v2.png"
-              alt="we-are-cult-img"
-              loading="lazy"
-            />
+            <h2 style={{ 
+              fontSize: '4rem', 
+              fontWeight: '900', 
+              color: '#ff1744', 
+              textAlign: 'center',
+              textShadow: '3px 3px 6px rgba(0,0,0,0.8), 0 0 20px rgba(255,23,68,0.5)',
+              margin: '0',
+              padding: '20px',
+              textTransform: 'lowercase',
+              letterSpacing: '2px',
+              fontFamily: 'Arial, sans-serif',
+              background: 'linear-gradient(45deg, #ff1744, #ff6b9d)',
+              WebkitBackgroundClip: 'text',
+              WebkitTextFillColor: 'transparent',
+              filter: 'drop-shadow(0 0 10px rgba(255,23,68,0.7))'
+            }}>
+              join slam fitness now
+            </h2>
           </div>
           {/* <div className="homePage__text-poster-one_svg-one">
           <svg
@@ -297,7 +310,7 @@ const Home = () => {
       <div className="homepage__poster-container">
         <div className="homepage__poster-bg-img">
           <img
-            src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_700,ar_1,q_auto:eco,dpr_1.0700000524520874,f_auto,fl_progressive//image/test/gradient-circle/aqua-blur-circle.svg"
+            src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_700,ar_1,q_auto:eco,dpr_1.0700000524520874,f_auto,fl_progressive//image/test/gradient-circle/pink-blur-circle.svg"
             alt=""
           />
           <img
@@ -305,11 +318,11 @@ const Home = () => {
             alt=""
           />
           <img
-            src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_700,ar_1,q_auto:eco,dpr_1.0700000524520874,f_auto,fl_progressive//image/test/gradient-circle/aqua-blur-circle.svg"
+            src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_700,ar_1,q_auto:eco,dpr_1.0700000524520874,f_auto,fl_progressive//image/test/gradient-circle/pink-blur-circle.svg"
             alt=""
           />
           <img
-            src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_500,ar_1,q_auto:eco,dpr_2,f_auto,fl_progressive//image/test/gradient-circle/aqua-blur-circle.svg"
+            src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_500,ar_1,q_auto:eco,dpr_2,f_auto,fl_progressive//image/test/gradient-circle/pink-blur-circle.svg"
             alt=""
           />
         </div>
@@ -317,9 +330,9 @@ const Home = () => {
           {/* CARD 1 */}
           <div className="homePage__posters-card">
             <div className="homePage__posters-card_text">
-              <a href="/transform">
+              <a href="/fitness">
                 <div className="homePage__posters-card_text-titleText">
-                  <h3>cult transform</h3>
+                  <h3>General Training</h3>
                   <div className="homePage__posters-card_text-titleText-icon">
                     <img
                       src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_40,ar_1,q_auto:eco,dpr_2,f_auto,fl_progressive//image/test/four-square-card/glass-circle-arrow.svg"
@@ -329,7 +342,7 @@ const Home = () => {
                 </div>
 
                 <div className="homePage__poster-card_text-subText">
-                  Get coached to lose weight for good
+                  Build strength, endurance, and overall fitness
                 </div>
               </a>
             </div>
@@ -338,9 +351,9 @@ const Home = () => {
           {/* CARD 2 */}
           <div className="homePage__posters-card2">
             <div className="homePage__posters-card2_text">
-              <a href="/transform">
+              <a href="/fitness">
                 <div className="homePage__posters-card2_text-titleText">
-                  <h3>Workout Gear</h3>
+                  <h3>Personal Training</h3>
                   <div className="homePage__posters-card2_text-titleText-icon">
                     <img
                       src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_40,ar_1,q_auto:eco,dpr_2,f_auto,fl_progressive//image/test/four-square-card/glass-circle-arrow.svg"
@@ -350,7 +363,7 @@ const Home = () => {
                 </div>
 
                 <div className="homePage__poster-card2_text-subText">
-                  Everything you need for your workout
+                  One-on-one coaching for personalized results
                 </div>
               </a>
             </div>
@@ -368,9 +381,9 @@ const Home = () => {
             }}
           >
             <div className="homePage__posters-card_text">
-              <a href="/transform">
+              <a href="/fitness">
                 <div className="homePage__posters-card_text-titleText">
-                  <h3>The .fit way</h3>
+                  <h3>Group Classes</h3>
                   <div className="homePage__posters-card_text-titleText-icon">
                     <img
                       src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_40,ar_1,q_auto:eco,dpr_2,f_auto,fl_progressive//image/test/four-square-card/glass-circle-arrow.svg"
@@ -380,7 +393,7 @@ const Home = () => {
                 </div>
 
                 <div className="homePage__poster-card_text-subText">
-                  Making health easy, one day at a time
+                  Energizing group workouts with expert trainers
                 </div>
               </a>
             </div>
@@ -394,9 +407,9 @@ const Home = () => {
             }}
           >
             <div className="homePage__posters-card2_text">
-              <a href="/transform">
+              <a href="/fitness">
                 <div className="homePage__posters-card2_text-titleText">
-                  <h3>Personal Trainer</h3>
+                  <h3>HIIT Training</h3>
                   <div className="homePage__posters-card2_text-titleText-icon">
                     <img
                       src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_40,ar_1,q_auto:eco,dpr_2,f_auto,fl_progressive//image/test/four-square-card/glass-circle-arrow.svg"
@@ -406,7 +419,7 @@ const Home = () => {
                 </div>
 
                 <div className="homePage__poster-card2_text-subText">
-                  At-Home personalized workouts with the best of cult trainers
+                  High-intensity interval training for maximum results
                 </div>
               </a>
             </div>

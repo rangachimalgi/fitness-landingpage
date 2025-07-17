@@ -11,122 +11,90 @@ const Slide = () => {
       </div>
       <div id="secondmain">
         <a
-          href="/fr/"
-          onMouseEnter={() =>
-            setImage(
-              `https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2020/12/podcasters.png`
-            )
-          }
+          href="/fitness"
+          onMouseEnter={() => setImage("")}
           // onMouseLeave={() => setImage("")}
         >
           <span className="shadow">
             <div>
-              <h2>Podcasters</h2>
+              <h2>General Training</h2>
             </div>
           </span>
         </a>
         <a
-          href="/en/"
-          onMouseEnter={() =>
-            setImage(
-              `https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2020/12/videocreators.png`
-            )
-          }
+          href="/personal-training"
+          onMouseEnter={() => setImage("")}
           // onMouseLeave={() => setImage("")}
         >
           <span className="shadow">
             <div>
-              <h2>Video Creators</h2>
+              <h2>Personal Training</h2>
             </div>
           </span>
         </a>
         <a
-          href="/fr/"
-          onMouseEnter={() =>
-            setImage(
-              `https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2020/12/musicians.png`
-            )
-          }
+          href="/group-classes"
+          onMouseEnter={() => setImage("")}
           // onMouseLeave={() => setImage("")}
         >
           <span className="shadow">
             <div>
-              <h2>Musicians</h2>
+              <h2>Group Classes</h2>
             </div>
           </span>
         </a>
         <a
-          href="/fr/"
-          onMouseEnter={() =>
-            setImage(
-              `https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2020/12/visualartists.png`
-            )
-          }
+          href="/hiit-training"
+          onMouseEnter={() => setImage("")}
           // onMouseLeave={() => setImage("")}
         >
           <span className="shadow">
             <div>
-              <h2>Visual Artists</h2>
+              <h2>HIIT Training</h2>
             </div>
           </span>
         </a>
         <a
-          href="/fr/"
-          onMouseEnter={() =>
-            setImage(
-              `https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2020/12/communities.png`
-            )
-          }
+          href="/yoga"
+          onMouseEnter={() => setImage("")}
           // onMouseLeave={() => setImage("")}
         >
           <span className="shadow">
             <div>
-              <h2>Communities</h2>
+              <h2>Yoga</h2>
             </div>
           </span>
         </a>
         <a
-          href="/fr/"
-          onMouseEnter={() =>
-            setImage(
-              `https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2020/12/writers.png`
-            )
-          }
+          href="/boxing"
+          onMouseEnter={() => setImage("")}
           // onMouseLeave={() => setImage("")}
         >
           <span className="shadow">
             <div>
-              <h2>Writers & Journalists</h2>
+              <h2>Boxing</h2>
             </div>
           </span>
         </a>
         <a
-          href="/fr/"
-          onMouseEnter={() =>
-            setImage(
-              `https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2020/12/gamingcreators.png`
-            )
-          }
+          href="/strength-conditioning"
+          onMouseEnter={() => setImage("")}
           // onMouseLeave={() => setImage("")}
         >
           <span className="shadow">
             <div>
-              <h2>Gaming Creators</h2>
+              <h2>Strength & Conditioning</h2>
             </div>
           </span>
         </a>
         <a
-          href="/fr/"
-          onMouseEnter={() =>
-            setImage(
-              `https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2020/12/nonprofit.png`
-            )
-          }
+          href="/body-transformation"
+          onMouseEnter={() => setImage("")}
           // onMouseLeave={() => setImage("")}
         >
           <span className="shadow">
             <div>
-              <h2>Nonprofits</h2>
+              <h2>Body Transformation</h2>
             </div>
           </span>
         </a>

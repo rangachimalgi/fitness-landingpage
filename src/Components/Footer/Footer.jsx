@@ -1,11 +1,12 @@
 import React from "react";
 import "./Footer.scss";
+import Logo from "../Logo/Logo";
 const Footer = () => {
   return (
     <div className="footer">
       <div className="footer__logoBox">
                   <div className="footer__logoBox-img">
-            <span style={{ fontSize: "28px", fontWeight: "bold", color: "white" }}>slam</span>
+            <Logo size="large" />
           </div>
         <div className="footer__logoBox-text">
           At slam.fit, we make group workouts fun, daily food healthy & tasty,
