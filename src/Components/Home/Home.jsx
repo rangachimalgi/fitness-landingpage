@@ -186,10 +186,7 @@ const Home = () => {
         </div> */}
 
           <div className="homePage__text-poster-one_text">
-            <h4>A fitness movemet that is worth breaking a sweat for </h4>
-            <div className="homePage__text-poster-one_text_btn">
-              <button>EXPLORE CULTPASS</button>
-            </div>
+                          <h4>A fitness movemet that is worth breaking a sweat for </h4>
           </div>
         </div>
       </>
@@ -235,10 +232,9 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="homePage__images-container_txt" data-aos="fade-in">
-          <p>cultpass</p>
-          <h4>One membership for all your fitness needs</h4>
-        </div>
+                  <div className="homePage__images-container_txt" data-aos="fade-in">
+            <h4>One membership for all your fitness needs</h4>
+          </div>
       </div>
 
       {/* IMAGES SECTION ENDS */}
@@ -295,139 +291,7 @@ const Home = () => {
 
       {/* IMAGES SECTION ENDS */}
 
-      {/* CULTPASS SECTION START */}
 
-      <div className="homePage__cultpass">
-        <div className="homePage__cultpass-background">
-          <img
-            src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_500,ar_1,q_auto:eco,dpr_2,f_auto,fl_progressive//image/test/gradient-circle/pink-blur-circle.svg"
-            alt="pink"
-          />
-          <img
-            src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_500,ar_1,q_auto:eco,dpr_2,f_auto,fl_progressive//image/test/gradient-circle/golden-blur-circle.svg"
-            alt="blue"
-          />
-        </div>
-        <div className="homePage__cultpass-title">
-          <img
-            src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_259,ar_3.811,q_auto:eco,dpr_2,f_auto,fl_progressive//image/test/brand-logo/cult-pass.svg"
-            alt="cultpass-img"
-          />
-          <p>One membership for all your fitness needs</p>
-          <p>LEARN MORE</p>
-        </div>
-
-        <div className="homePage__cultpass-type">
-          <div className="homePage__cultpass-type-one">
-            <div className="homePage__cultpass-type-one_imgBox">
-              <img
-                src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_404,ar_1.31,q_auto:eco,dpr_2,f_auto,fl_progressive//image/test/introducting-cult-pass/icp_cb.png"
-                alt="elite-pass"
-                className="homePage__cultpass-poster"
-              />
-              <div className="homePage__cultpass-type-one_imgBox-miniContainer">
-                <img
-                  src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_68,ar_3.811,q_auto:eco,dpr_2,f_auto,fl_progressive//image/test/brand-logo/cult-pass.svg"
-                  alt="cultpass-small-logo"
-                />
-                <img
-                  src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_107,ar_3.59,q_auto:eco,dpr_2,f_auto,fl_progressive//image/test/brand-logo/cult-pass-elite-partial.png"
-                  alt="elite-logo"
-                />
-              </div>
-            </div>
-
-            <div className="homePage__cultpass-type-one_textBox">
-              <div className="homePage__cultpass-type-one_textBox-title">
-                <p>Unlimited access to</p>
-                <ul>
-                  <li>At-center group classes</li>
-                  <li>All ELITE & PRO gyms</li>
-                  <li>At-home live workout</li>
-                </ul>
-              </div>
-            </div>
-
-            <div className="homePage__cultpass-type-one_btnBox">
-              <button>TRY FOR FREE</button>
-              <button>LEARN MORE</button>
-            </div>
-          </div>
-
-          <div className="homePage__cultpass-type-one">
-            <div className="homePage__cultpass-type-one_imgBox">
-              <img
-                src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_404,ar_1.31,q_auto:eco,dpr_2,f_auto,fl_progressive//image/test/introducting-cult-pass/icp_cg.png"
-                alt="elite-pass"
-                className="homePage__cultpass-poster"
-              />
-              <div className="homePage__cultpass-type-one_imgBox-miniContainer">
-                <img
-                  src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_68,ar_3.811,q_auto:eco,dpr_2,f_auto,fl_progressive//image/test/brand-logo/cult-pass.svg"
-                  alt="cultpass-small-logo"
-                />
-                <img
-                  src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_78,ar_2.63,q_auto:eco,dpr_2,f_auto,fl_progressive//image/test/brand-logo/cult-pass-pro-partial.png"
-                  alt="pro-logo"
-                />
-              </div>
-            </div>
-
-            <div className="homePage__cultpass-type-one_textBox">
-              <div className="homePage__cultpass-type-one_textBox-title">
-                <p>Unlimited access to</p>
-                <ul>
-                  <li>At-center group classes</li>
-                  <li>All ELITE & PRO gyms</li>
-                  <li>At-home live workout</li>
-                </ul>
-              </div>
-            </div>
-
-            <div className="homePage__cultpass-type-one_btnBox">
-              <button>TRY FOR FREE</button>
-              <button>LEARN MORE</button>
-            </div>
-          </div>
-
-          <div className="homePage__cultpass-type-one">
-            <div className="homePage__cultpass-type-one_imgBox">
-              <img
-                src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_404,ar_1.31,q_auto:eco,dpr_2,f_auto,fl_progressive//image/test/introducting-cult-pass/icp_cl.png"
-                alt="live-pass"
-                className="homePage__cultpass-poster"
-              />
-              <div className="homePage__cultpass-type-one_imgBox-miniContainer">
-                <img
-                  src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_68,ar_3.811,q_auto:eco,dpr_2,f_auto,fl_progressive//image/test/brand-logo/cult-pass.svg"
-                  alt="cultpass-small-logo"
-                />
-                <img
-                  src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_85,ar_2.86,q_auto:eco,dpr_2,f_auto,fl_progressive//image/test/brand-logo/cult-pass-live-partial-4x.png"
-                  alt="live-logo"
-                />
-              </div>
-            </div>
-
-            <div className="homePage__cultpass-type-one_textBox">
-              <div className="homePage__cultpass-type-one_textBox-title">
-                <p>Unlimited access to</p>
-                <ul>
-                  <li>At-center group classes</li>
-                  <li>All ELITE & PRO gyms</li>
-                  <li>At-home live workout</li>
-                </ul>
-              </div>
-            </div>
-
-            <div className="homePage__cultpass-type-one_btnBox">
-              <button>TRY FOR FREE</button>
-              <button>LEARN MORE</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      {/* CULTPASS SECTION ENDS */}
 
       {/* POSTER CARDS STARTS */}
       <div className="homepage__poster-container">

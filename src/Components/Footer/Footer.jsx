@@ -4,14 +4,11 @@ const Footer = () => {
   return (
     <div className="footer">
       <div className="footer__logoBox">
-        <div className="footer__logoBox-img">
-          <img
-            src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_150,ar_3.87,q_auto:eco,dpr_2,f_auto,fl_progressive/image/test/brand-logo/vman-and-white-cult-text.png"
-            alt="footer-img"
-          />
-        </div>
+                  <div className="footer__logoBox-img">
+            <span style={{ fontSize: "28px", fontWeight: "bold", color: "white" }}>slam</span>
+          </div>
         <div className="footer__logoBox-text">
-          At cult.fit, we make group workouts fun, daily food healthy & tasty,
+          At slam.fit, we make group workouts fun, daily food healthy & tasty,
           mental fitness easy with yoga & meditation, Medical & lifestyle care
           hassle-free.#BeBetterEveryDay
         </div>
@@ -19,10 +16,10 @@ const Footer = () => {
 
       <div className="footer__textBoxContainer">
         <div className="footer__textBoxContainer__textBoxOne">
-          <div>cult.fit for buisness</div>
-          <div>cult.fit franchise</div>
+          <div>slam.fit for buisness</div>
+          <div>slam.fit franchise</div>
           <div>corporate partnership</div>
-          <div>cult pass network</div>
+          <div>slam pass network</div>
         </div>
 
         <div className="footer__textBoxContainer__textBoxTwo">

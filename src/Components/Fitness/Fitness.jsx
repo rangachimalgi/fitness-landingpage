@@ -5,7 +5,6 @@ import Navbar from "../Navbar/Navbar";
 import "./Fitness.css";
 import SimpleSlider from "./FitnessSlider";
 import SimpleSlider2 from "./FitnessSlider2";
-import { Navbar2 } from "./Navbar2";
 import { Footer } from "../index";
 
 const Fitness = () => {
@@ -31,16 +30,15 @@ const Fitness = () => {
     </div>
   ) : (
     <div>
-      <Navbar path="fitness" />
+      <Navbar path="services" />
       <div className="fitness-body" style={{ paddingTop: "60px" }}>
         {/* Start coding from here */}
-        <Navbar2 />
         <div className="pagemain">
           <div className="Fitnesshome">
             <button  className="btn">TRY FOR FREE</button>
             <div className="Offers">
               <div className="box">
-                <p className="line1">cultpass</p>
+                <p className="line1">slampass</p>
                 <img
                   src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_95,ar_3.59,q_auto:eco,dpr_1.25,f_auto,fl_progressive//image/test/brand-logo/cult-pass-elite-partial.png"
                   className="line2 eli"
@@ -48,7 +46,7 @@ const Fitness = () => {
                 <p className="line3">Starting at₹1143 / month</p>
               </div>
               <div className="box">
-                <p className="line1">cultpass</p>
+                <p className="line1">slampass</p>
                 <img
                   src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_70,ar_2.63,q_auto:eco,dpr_1.25,f_auto,fl_progressive//image/test/brand-logo/cult-pass-pro-partial.png"
                   className="line2 pro"
@@ -56,7 +54,7 @@ const Fitness = () => {
                 <p className="line3">Starting at₹678 / month</p>
               </div>
               <div className="box">
-                <p className="line1">cultpass</p>
+                <p className="line1">slampass</p>
                 <img
                   src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_75,ar_2.86,q_auto:eco,dpr_1.25,f_auto,fl_progressive//image/test/brand-logo/cult-pass-live-partial-4x.png"
                   className="line2 liv"
@@ -69,7 +67,7 @@ const Fitness = () => {
             </div>
             {/* <SimpleSlider /> */}
             <div className="secondhalf">
-              <p className="para">What you get with cultpass</p>
+              <p className="para">What you get with slampass</p>
               <img
                 className="map"
                 style={{width:"80%"}}
@@ -114,7 +112,7 @@ const Fitness = () => {
                 </div>
               </div>
               <div className="Choose">
-                <p className="para">Choose your cultpass</p>
+                <p className="para">Choose your slampass</p>
                 <h2
                   style={{
                     color: "#8f9193",
