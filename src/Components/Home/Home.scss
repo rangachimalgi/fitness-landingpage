@@ -529,22 +529,24 @@
   z-index: 3000;
   
   @media screen and (max-width: 1024px) {
-    width: 660px;
+    width: 90%;
     height: 300px;
     margin: 0 auto;
     padding: 3%;
   }
   
   @media screen and (max-width: 769px) {
-    width: 660px;
-    height: 300px;
+    width: 95%;
+    height: auto;
+    min-height: 250px;
     margin: 0 auto;
     padding: 3%;
   }
   
   @media screen and (max-width: 480px) {
-    width: 580px;
-    height: 280px;
+    width: 98%;
+    height: auto;
+    min-height: 200px;
     margin: 0 auto;
     padding: 2%;
   }
@@ -684,24 +686,30 @@
   font-family: Roboto, sans-serif;
   
   @media screen and (max-width: 1024px) {
-    width: 660px;
+    width: 90%;
     height: 250px;
     margin: 0 auto;
     padding: 30px;
   }
   
   @media screen and (max-width: 769px) {
-    width: 660px;
-    height: 250px;
+    width: 95%;
+    height: auto;
+    min-height: 200px;
     margin: 0 auto;
-    padding: 30px 20px;
+    padding: 20px;
+    flex-direction: column;
+    gap: 20px;
   }
   
   @media screen and (max-width: 480px) {
-    width: 580px;
-    height: 220px;
+    width: 98%;
+    height: auto;
+    min-height: 180px;
     margin: 0 auto;
-    padding: 20px 15px;
+    padding: 15px;
+    flex-direction: column;
+    gap: 15px;
   }
   &-title {
     // border: 1px solid red;
@@ -730,8 +738,9 @@
       margin-bottom: 30px;
     }
     @media screen and (max-width: 769px) {
-      margin: 10px 5px;
-      width: 80%;
+      margin: 0;
+      width: 100%;
+      text-align: center;
       }
     
   }
@@ -742,6 +751,10 @@
     justify-content: center;
     align-items: center;
     
+    @media screen and (max-width: 769px) {
+      width: 100%;
+    }
+    
     img{
       padding: 10px;
       @media screen and (max-width: 1024px) {
@@ -749,9 +762,10 @@
        
         }
   
-      //   @media screen and (max-width: 769px) {
-      //  width: 100px;
-      //   }
+      @media screen and (max-width: 769px) {
+       width: 120px;
+       
+        }
     }
   }
 
