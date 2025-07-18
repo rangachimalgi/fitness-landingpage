@@ -5,6 +5,8 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Footer from "../Footer/Footer";
 import Slide from "./Slide";
+import Lottie from "lottie-react";
+import loadingAnimation from "../../Assets/images/Trailloading.json";
 
 const Home = () => {
   const [loading__Status, setLoading__Status] = useState(true);
@@ -21,10 +23,11 @@ const Home = () => {
 
   return loading__Status ? (
     <div className="loading__Screen">
-      {" "}
-      <img
-        src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,q_auto:eco,dpr_1.0700000524520874,f_auto,fl_progressive//image/loader_compressed-v3.gif"
-        alt="loading-gif"
+      <Lottie 
+        animationData={loadingAnimation}
+        loop={true}
+        autoplay={true}
+        style={{ width: 200, height: 200 }}
       />
     </div>
   ) : (
