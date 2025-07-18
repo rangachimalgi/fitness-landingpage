@@ -5,27 +5,45 @@
   text-align: center;
   font-family: Arial, sans-serif;
   
+  // Remove any borders or underlines
+  border: none !important;
+  border-bottom: none !important;
+  text-decoration: none !important;
+  outline: none !important;
+  
   &__main {
     display: flex;
     align-items: center;
     margin-bottom: 4px;
+    border: none !important;
+    border-bottom: none !important;
+    text-decoration: none !important;
   }
   
   &__letter {
     font-weight: bold;
     text-transform: uppercase;
+    border: none !important;
+    border-bottom: none !important;
+    text-decoration: none !important;
     
     &--s, &--a, &--m {
       color: #000000;
+      border: none !important;
+      border-bottom: none !important;
+      text-decoration: none !important;
     }
     
     &--l {
-      color: #ff1744;
+      color: #ff1744 !important;
       text-shadow: 0 2px 4px rgba(139, 0, 0, 0.3);
-      background: linear-gradient(135deg, #ff1744 0%, #d32f2f 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
+      background: none !important;
+      -webkit-background-clip: unset !important;
+      -webkit-text-fill-color: unset !important;
+      background-clip: unset !important;
+      border: none !important;
+      border-bottom: none !important;
+      text-decoration: none !important;
     }
   }
   
@@ -35,27 +53,43 @@
     text-transform: uppercase;
     color: #000000;
     letter-spacing: 0.5px;
+    border: none !important;
+    border-bottom: none !important;
+    text-decoration: none !important;
   }
   
   // Dark background variants for navbar and footer
   .navbar &, .footer &, .m-nav & {
+    border: none !important;
+    border-bottom: none !important;
+    text-decoration: none !important;
+    
     .logo__letter {
       &--s, &--a, &--m {
         color: #ffffff;
+        border: none !important;
+        border-bottom: none !important;
+        text-decoration: none !important;
       }
       
       &--l {
-        color: #ff1744;
+        color: #ff1744 !important;
         text-shadow: 0 2px 4px rgba(139, 0, 0, 0.5);
-        background: linear-gradient(135deg, #ff1744 0%, #d32f2f 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
+        background: none !important;
+        -webkit-background-clip: unset !important;
+        -webkit-text-fill-color: unset !important;
+        background-clip: unset !important;
+        border: none !important;
+        border-bottom: none !important;
+        text-decoration: none !important;
       }
     }
     
     .logo__tagline {
       color: #ffffff;
+      border: none !important;
+      border-bottom: none !important;
+      text-decoration: none !important;
     }
   }
   
