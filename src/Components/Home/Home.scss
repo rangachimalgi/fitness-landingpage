@@ -73,10 +73,24 @@
 
       @media screen and (max-width: 769px) {
         & {
-          margin: 10% 20%;
+          margin: 5% 10%;
+          text-align: center;
 
-          img {
-            width: 200px;
+          h2 {
+            font-size: 2.5rem !important;
+            line-height: 1.2;
+            padding: 10px !important;
+          }
+        }
+      }
+      
+      @media screen and (max-width: 480px) {
+        & {
+          margin: 5% 5%;
+          
+          h2 {
+            font-size: 2rem !important;
+            letter-spacing: 1px !important;
           }
         }
       }
@@ -210,10 +224,16 @@
     text-align: center;
     z-index: 2;
 
-
     @media screen and (max-width: 769px) {
-     top: 120vh;
-      
+     top: 140vh;
+     left: 10%;
+     width: 80%;
+    }
+    
+    @media screen and (max-width: 480px) {
+     top: 130vh;
+     left: 5%;
+     width: 90%;
     }
 
     p{
@@ -253,10 +273,16 @@
     text-align: center;
     z-index: 2;
 
-
     @media screen and (max-width: 769px) {
-     top: 120vh;
-      
+     top: 200vh;
+     left: 10%;
+     width: 80%;
+    }
+    
+    @media screen and (max-width: 480px) {
+     top: 180vh;
+     left: 5%;
+     width: 90%;
     }
 
     p{
@@ -299,6 +325,12 @@
 
   @media screen and (max-width: 769px) {
     flex-direction: column;
+    padding: 10px 0;
+  }
+  
+  @media screen and (max-width: 480px) {
+    flex-direction: column;
+    padding: 5px 0;
   }
 
   &-card {
@@ -351,10 +383,22 @@
           h3 {
             font-size: 30px;
             font-weight: 900;
+            
+            @media screen and (max-width: 769px) {
+              font-size: 24px;
+            }
+            
+            @media screen and (max-width: 480px) {
+              font-size: 20px;
+            }
           }
 
           img {
             width: 35px;
+            
+            @media screen and (max-width: 480px) {
+              width: 25px;
+            }
           }
         }
 
@@ -415,10 +459,22 @@
           h3 {
             font-size: 30px;
             font-weight: 900;
+            
+            @media screen and (max-width: 769px) {
+              font-size: 24px;
+            }
+            
+            @media screen and (max-width: 480px) {
+              font-size: 20px;
+            }
           }
 
           img {
             width: 35px;
+            
+            @media screen and (max-width: 480px) {
+              width: 25px;
+            }
           }
         }
 
@@ -433,6 +489,7 @@
 //POSTER BG IMG
 .homepage__poster-container {
   position: relative;
+  background: #000000;
 
   .homepage__poster-bg-img {
     display: flex;
@@ -462,12 +519,24 @@
   background-repeat: no-repeat;
   border-radius: 25px;
   border: none;
-  background: linear-gradient(135deg, #7d4e57 0%, #9e6578 25%, #805659 50%, #864545 75%, #7a4751 100%);
+  background: linear-gradient(135deg, #fafafa 0%, #ffffff 25%, #ffffff 50%, #ffffff 75%, #ffffff 100%);
   // display: flex;
   overflow: hidden;
   // flex-direction: row;
   position: inherit;
   z-index: 3000;
+  
+  @media screen and (max-width: 769px) {
+    margin: 0 5%;
+    padding: 3%;
+    width: 90%;
+  }
+  
+  @media screen and (max-width: 480px) {
+    margin: 0 2%;
+    padding: 2%;
+    width: 96%;
+  }
 
 
   // &_text-box {
@@ -597,8 +666,22 @@
   // border: none;
   position: relative;
   // background-position: right center;
-  background-image: url(https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_1200,ar_2.66,q_auto:eco,dpr_1.0700000524520874,f_auto,fl_progressive//image/test/download-app/download-app-variant-2.png);
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 25%, #ffffff 50%, #f5f5f5 75%, #ffffff 100%);
   font-family: Roboto, sans-serif;
+  
+  @media screen and (max-width: 769px) {
+    width: 90%;
+    height: auto;
+    min-height: 300px;
+    padding: 30px 20px;
+  }
+  
+  @media screen and (max-width: 480px) {
+    width: 95%;
+    height: auto;
+    min-height: 250px;
+    padding: 20px 15px;
+  }
   &-title {
     // border: 1px solid red;
     width: 50%;
@@ -606,6 +689,7 @@
     h3 {
       font-size: 26px;
       font-weight: 600;
+      color: #000000;
       // line-height: 1.5;
       letter-spacing: 0.7px;
       margin-bottom: 30px;
@@ -621,6 +705,7 @@
     }
     p {
       font-size: 20px;
+      color: #000000;
       margin-bottom: 30px;
     }
     @media screen and (max-width: 769px) {

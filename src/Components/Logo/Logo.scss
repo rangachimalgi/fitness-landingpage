@@ -38,7 +38,7 @@
   }
   
   // Dark background variants for navbar and footer
-  .navbar &, .footer & {
+  .navbar &, .footer &, .m-nav & {
     .logo__letter {
       &--s, &--a, &--m {
         color: #ffffff;

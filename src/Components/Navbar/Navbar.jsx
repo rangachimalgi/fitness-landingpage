@@ -6,6 +6,7 @@ import Logo from "../Logo/Logo";
 const Navbar = (path) => {
   path = path.path;
   const [showServicesDropdown, setShowServicesDropdown] = useState(false);
+  const [showMobileMenu, setShowMobileMenu] = useState(false);
   const navigate = useNavigate();
 
   const handleServiceClick = (service) => {
@@ -202,20 +203,52 @@ const Navbar = (path) => {
         </div>
       </div>
       <div className="m-nav">
-        <div className="m-nav__hamburgar">
+        <div className="m-nav__hamburgar" onClick={() => setShowMobileMenu(!showMobileMenu)}>
           <div></div>
           <div></div>
           <div></div>
         </div>
 
         <div className="m-nav__logo">
-          <img
-            src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_35,ar_1,q_auto:eco,dpr_2,f_auto,fl_progressive//image/test/brand-logo/curefit-logo-white.svg"
-            alt="m-logo"
-          />
+          <Link to="/" className="navbar__links-link">
+            <Logo size="small" />
+          </Link>
         </div>
 
-
+        {/* Mobile Menu */}
+        {showMobileMenu && (
+          <div className="mobile-menu">
+            <div className="mobile-menu__overlay" onClick={() => setShowMobileMenu(false)}></div>
+            <div className="mobile-menu__content">
+              <div className="mobile-menu__header">
+                <h3>Menu</h3>
+                <button onClick={() => setShowMobileMenu(false)}>✕</button>
+              </div>
+              <div className="mobile-menu__items">
+                <Link to="/" className="mobile-menu__item" onClick={() => setShowMobileMenu(false)}>
+                  Home
+                </Link>
+                <div className="mobile-menu__item mobile-menu__services">
+                  <span>Services</span>
+                  <div className="mobile-menu__services-list">
+                    <div onClick={() => { handleServiceClick("General Training"); setShowMobileMenu(false); }}>General Training</div>
+                    <div onClick={() => { handleServiceClick("Personal Training"); setShowMobileMenu(false); }}>Personal Training</div>
+                    <div onClick={() => { handleServiceClick("Group Classes"); setShowMobileMenu(false); }}>Group Classes</div>
+                    <div onClick={() => { handleServiceClick("HIIT Training"); setShowMobileMenu(false); }}>HIIT Training</div>
+                    <div onClick={() => { handleServiceClick("Yoga"); setShowMobileMenu(false); }}>Yoga</div>
+                    <div onClick={() => { handleServiceClick("Boxing"); setShowMobileMenu(false); }}>Boxing</div>
+                    <div onClick={() => { handleServiceClick("Strength & Conditioning"); setShowMobileMenu(false); }}>Strength & Conditioning</div>
+                    <div onClick={() => { handleServiceClick("Body Transformation"); setShowMobileMenu(false); }}>Body Transformation</div>
+                  </div>
+                </div>
+                <div className="mobile-menu__buttons">
+                  <button className="mobile-menu__btn mobile-menu__btn--franchise">OWN A FRANCHISE</button>
+                  <button className="mobile-menu__btn mobile-menu__btn--app">GET APP</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
       </div>
     </>
   );

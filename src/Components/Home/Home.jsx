@@ -50,18 +50,18 @@ const Home = () => {
             <h2 style={{ 
               fontSize: '4rem', 
               fontWeight: '900', 
-              color: '#ff1744', 
               textAlign: 'center',
-              textShadow: '3px 3px 6px rgba(0,0,0,0.8), 0 0 20px rgba(255,23,68,0.5)',
               margin: '0',
               padding: '20px',
               textTransform: 'lowercase',
               letterSpacing: '2px',
               fontFamily: 'Arial, sans-serif',
-              background: 'linear-gradient(45deg, #ff1744, #ff6b9d)',
+              background: 'linear-gradient(135deg, #ff1744 0%, #ff6b9d 50%, #ff4757 100%)',
               WebkitBackgroundClip: 'text',
               WebkitTextFillColor: 'transparent',
-              filter: 'drop-shadow(0 0 10px rgba(255,23,68,0.7))'
+              backgroundClip: 'text',
+              borderRadius: '8px',
+              textShadow: '0 0 30px rgba(255, 23, 68, 0.3)'
             }}>
               join slam fitness now
             </h2>
@@ -309,22 +309,7 @@ const Home = () => {
       {/* POSTER CARDS STARTS */}
       <div className="homepage__poster-container">
         <div className="homepage__poster-bg-img">
-          <img
-            src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_700,ar_1,q_auto:eco,dpr_1.0700000524520874,f_auto,fl_progressive//image/test/gradient-circle/pink-blur-circle.svg"
-            alt=""
-          />
-          <img
-            src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_700,ar_1,q_auto:eco,dpr_1.0700000524520874,f_auto,fl_progressive//image/test/gradient-circle/pink-blur-circle.svg"
-            alt=""
-          />
-          <img
-            src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_700,ar_1,q_auto:eco,dpr_1.0700000524520874,f_auto,fl_progressive//image/test/gradient-circle/pink-blur-circle.svg"
-            alt=""
-          />
-          <img
-            src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_500,ar_1,q_auto:eco,dpr_2,f_auto,fl_progressive//image/test/gradient-circle/pink-blur-circle.svg"
-            alt=""
-          />
+          {/* Removed pink blur circles */}
         </div>
         <div className="homePage__posters">
           {/* CARD 1 */}
